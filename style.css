@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body, html {
+  margin: 0;
+  background-color: #DCDCDC;
+}
+
+section {
+  margin-bottom: 120px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.ends {
+  height: 120px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: auto 68px;
+}
+.ends .burger {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ends .logo {
+  flex: 1;
+  text-align: center;
+}
+.ends .logo span {
+  font-size: large;
+}
+.icon {
+  position: fixed;
+  z-index: 999;
+}
+.ends .eyeIcon {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+main {
+  margin: 30px auto;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.slides .list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.slides .slide {
+  display: flex;
+  width: 80vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-left: 140px;
+}
+
+.slide .background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1220px;
+  height: 650px;
+  background-position: center;
+  will-change: transform;
+  background-size: cover;
+}
+
+.content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  width: 95%;
+  padding: 3rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.25em;
+  font-weight: 500;
+}
+
+.content .content_title {
+  margin-bottom: 20px;
+}
+
+.content button {
+  background: transparent;
+  padding: 10px 25px;
+  border: 2px solid white;
+  color: #fff;
+}
+
+.slide-image {
+  width: 80vw;
+  height: 650px;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.content-text {
+  padding: 3rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1.25em;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-text button {
+  background: transparent;
+  padding: 10px 25px;
+  border: 2px solid white;
+  color: #fff;
+}
+
+.fixed-background-image {
+  background-image: url(./images/pexels-luis-del-río-15286.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.text {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3rem;
+  height: 100vh;
+  width: 50%;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+  transition: top 5s ease-in-out 5s;
+}
