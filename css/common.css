@@ -47,6 +47,15 @@ footer {
 
 .wrapper .container .col-1 ul li {
   margin-bottom: 16px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.wrapper .container .col-1 ul li a {
+  margin-right: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .wrapper .container .col-2 {
