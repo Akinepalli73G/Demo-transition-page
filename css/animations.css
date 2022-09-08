@@ -1,0 +1,37 @@
+[data-animation] {
+  transition: transform 1s ease;
+}
+
+[data-animation="fadeInFromUp"] {
+  transform: translateY(-15px);
+}
+
+[data-animation="fadeInFromBottom"] {
+  transform: translateY(15px);
+}
+
+[data-animation="fadeInFromBottom"].loaded,
+[data-animation="fadeInFromUp"].loaded {
+  transform: translateY(0);
+}
+
+[data-animation="fadeInFromLeft"] {
+  transform: translateX(-25px);
+}
+
+[data-animation="fadeInFromRight"] {
+  transform: translateX(35px);
+}
+
+[data-animation="fadeInFromRight"].loaded,
+[data-animation="fadeInFromLeft"].loaded {
+  transform: translateX(0);
+}
+
+[data-animation="zoomIn"] {
+  transform: scale(0.8);
+}
+
+[data-animation="zoomIn"].loaded {
+  transform: scale(1);
+}
