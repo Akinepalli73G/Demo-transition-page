@@ -1,5 +1,5 @@
 [data-animation] {
-  transition: transform 1s ease;
+  transition: transform 2s ease, 5s filter linear;
 }
 
 [data-animation="fadeInFromUp"] {
@@ -8,11 +8,13 @@
 
 [data-animation="fadeInFromBottom"] {
   transform: translateY(15px);
+  filter: blur(3px);
 }
 
 [data-animation="fadeInFromBottom"].loaded,
 [data-animation="fadeInFromUp"].loaded {
   transform: translateY(0);
+  filter: blur(0);
 }
 
 [data-animation="fadeInFromLeft"] {

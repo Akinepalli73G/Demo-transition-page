@@ -1,0 +1,191 @@
+.common-button {
+    text-transform: uppercase;
+    padding: 13px 40px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+body{
+    overflow-x: hidden;
+  }
+  .home,
+  .home .main {
+    background: #EBEBEB;
+  }
+  
+  .home .navigation {
+    color: #4B4B4B;
+  }
+  
+  .home .navigation .logo,
+  .home .footer .logo {
+    fill: #4B4B4B;
+    max-width: 100%;
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .home .hamburger span {
+    background: #4B4B4B;
+  }
+  
+  .home .eyeIcon {
+    stroke: #4B4B4B;
+  }
+  
+  .parallax.wideWhenHoevered {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .parallax.wideWhenHoevered .parallax-image {
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+    transition: 1s all ease-in-out;
+  }
+  
+  .parallax.wideWhenHoevered .parallax-image:hover {
+    width: 100%;
+    top: 0;
+    height: 100%;
+  }
+  
+  /* .parallax.wideWhenHoevered .parallax-image video {
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .parallax.wideWhenHoevered .parallax-image:hover video {
+    z-index: 1;
+    opacity: 1;
+  } */
+  
+  .home .heading {
+    font-size: 200%;
+  }
+  
+  .home .text {
+    height: auto !important;
+    flex-flow: column wrap;
+  }
+  
+  .footer,
+  .icon-name {
+    color: #4B4B4B;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .two-column {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .footer {
+    width: 1024px;
+    margin: 30px auto 0;
+    max-width: 85%;
+  }
+  
+  .footer .branding {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  
+  .footer ul li {
+    margin-bottom: 15px;
+  }
+  
+  .footer .two-column {
+    border-top: 2px solid #4B4B4B;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  span.icon {
+    text-align: center;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .footer ul li .footerlinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+  }
+  
+  ul.horizontal-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  
+  ul.horizontal-list li a {
+    color: #4B4B4B;
+  }
+  
+  .home .parallax-content {
+    position: sticky !important;
+    top: 40px;
+  }
+  
+  .parallax.wideWhenHoevered[data-animation] .parallax-image {
+    filter: blur(5px);
+  }
+  
+  .parallax.wideWhenHoevered[data-animation].loaded .parallax-image {
+    filter: blur(0);
+  }
+  
+  .scrollToNext a {
+    color: #4B4B4B;
+  }
+  
+  .scrollToNext {
+    padding-bottom: 10px;
+    color: #4B4B4B;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .scrollToNext.scrollToTop a {
+    transform: rotate(180deg);
+    display: inline-block;
+  }
+  
+  .scrollToNext.scrollToTop {
+    position: static;
+  }
+  

@@ -9,6 +9,20 @@ $(document).ready(function () {
     $(this).css("background-image", "url('" + imgURL + "')");
   });
 
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    if ($(this).parent(".scrollToNext").hasClass("scrollToTop")) {
+      $("html, body").animate({ scrollTop: 0 }, 800);
+      return false;
+    }
+    else {
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    }
+  });
+
   //readying content if on scroll user reloads
   animation($hasAnimation);
   parallaxImageBlurNWhite($parallaxImage);
@@ -92,6 +106,11 @@ function animation(element) {
   });
 }
 
+//scrollToNext Section
+function scrollToNext(element) {
+
+}
+
 //now zoom it
 function nowZoomIt(element) {
   var width = percentageSeen(element) * 2;
@@ -161,6 +180,19 @@ function parallaxImageBlurNWhite(element) {
       }
       else {
         $(this).css("opacity", 1);
+      }
+    }
+
+    if ($(this).hasClass("parallax-has-video")) {
+      if (percentageSeen($(this)) > 30 && percentageSeen($(this)) < 101) {
+        $(this).on('hover mouseover', function () {
+          $(this).children("video").addClass("loaded");
+          setTimeout(function () { $(".home .navigation .logo").css("fill", "#fff") }, 1000);
+        });
+
+        $(this).on('mouseout mouseleave', function () {
+          setTimeout(function () { $(".home .navigation .logo").css("fill", "#4B4B4B") }, 500);
+        });
       }
     }
   });
