@@ -25,6 +25,7 @@ body {
   background: #EBEBEB;
 }
 
+
 footer {
   color: #4B4B4B;
 }
@@ -406,6 +407,7 @@ p {
 
 .parallax {
   position: relative;
+  overflow: hidden;
 }
 
 .parallax-image {
@@ -453,10 +455,10 @@ p {
   font-weight: 400;
 }
 
-.heading,
+/* .heading,
 .heading+p {
   text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-}
+} */
 
 .parallax-content {
   position: relative;
@@ -677,6 +679,76 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.footer,
+.icon-name {
+  color: #4B4B4B;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.two-column {
+  display: flex;
+  flex-flow: row;
+}
+
+.two-column .column {
+  flex: 1;
+}
+
+.footer {
+  margin: 30px auto 0;
+  max-width: 85%;
+}
+
+.footer .branding {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.footer ul li {
+  margin-bottom: 15px;
+}
+
+.footer .two-column {
+  border-top: 2px solid #4B4B4B;
+  padding-top: 30px;
+}
+
+.footer .discription {
+  width: 50%
+}
+
+span.icon {
+  text-align: center;
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+}
+
+.footer ul li .footerlinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+}
+
+ul.horizontal-list {
+  display: flex;
+  margin-top: 5px;
+}
+
+ul.horizontal-list li {
+  flex: 1;
+}
+
+ul.horizontal-list li a {
+  color: #4B4B4B;
 }
 
 @media only screen and (min-width: 900px) {
